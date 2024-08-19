@@ -1,0 +1,17 @@
+/* Login Fields */
+.textField {
+    width: 40%;
+    opacity: 0;
+    animation: fadeInFromMiddle 2.5s ease-out forwards;
+    z-index: 1;
+}
+@keyframes fadeInFromMiddle {
+    from {
+      opacity: 0;
+      transform: scale(0.5); /* Start slightly smaller */
+    }
+    to {
+      opacity: 1;
+      transform: scale(1); /* End at the normal size */
+    }
+}  

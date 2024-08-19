@@ -1,0 +1,35 @@
+.feedbackButton {
+    background-color: var(--primary-color);
+    width: 200px;
+}  
+.feedbackButton:hover {
+    background-color: var(--primaryfade-color);
+}
+/* Modal */
+.modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #171717;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0px 20px var(--primaryfade-color);
+    padding: 20px;
+    outline: none;
+    color: var(--text-color);
+}  
+.feedbackInput {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}  
+.submitButton {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+.submitButton:hover {
+    background-color: var(--primaryfade-color);
+} 

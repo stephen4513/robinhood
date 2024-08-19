@@ -1,0 +1,63 @@
+/* Main Container */
+.carouselContainer {
+    width: 100%; /* Adjust width for feedback carousel */
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    background-color: transparent;
+    padding: 10px;
+}
+/* Feedback Cards */
+.logos {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.logosSlide {
+    display: flex;
+    flex-direction: column;
+    animation: slide 60s linear infinite;
+}
+.feedbackCard {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: solid 3px #333;
+    color: black;
+    font-family: 'Courier New', monospace;
+    overflow-wrap: break-word;
+    max-height: 120px;
+}
+.timestamp {
+    color: gray;
+    font-size: 0.75em;
+    margin-top: 8px;
+    text-align: right;
+    display: block;
+}
+.logos:before,
+.logos:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    content: "";
+    z-index: 2;
+}
+.logos:before {
+    top: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), var(--background-color));
+}
+.logos:after {
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--background-color));
+}
+@keyframes slide {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}

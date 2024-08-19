@@ -1,0 +1,24 @@
+/* Input */  
+.inputContainer {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 15%;
+}  
+.inputBox {
+    flex-grow: 1;
+    margin-right: 10px;
+}  
+.sendButton {
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 55px;  
+}  
+.sendButton:hover {
+    background-color: var(--primaryfade-color);
+}

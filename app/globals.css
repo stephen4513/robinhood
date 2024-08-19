@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Global Variables - RAZER */
+:root {
+  --background-color: black;
+  --primary-color: rgb(4, 143, 34);
+  --primaryfade-color: rgba(18, 131, 48, 0.7);
+  --secondary-color: #333;
+  --text-color: white;
+  --font-family: 'Courier New', Courier, monospace;
+}
